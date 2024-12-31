@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
+    "todo-fullstack": "file:",
     "zod": "^3.24.1"
   },
   "devDependencies": {

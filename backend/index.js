@@ -28,6 +28,18 @@ app.post('/todo', async(req, res)=>{
 app.get('/todos', async(req, res)=>{
     const todos = await todo.find({})
     console.log(todos)
+    // res.json({
+    //     todos
+    // })
+    
+    // if(todos ){
+    //     console.log(todos)
+    // }
+    // else{
+    //     res.json({
+    //         msg:"No todos"
+    //     })
+    // }
 })
 
 app.put('/completed', async(req, res)=>{
