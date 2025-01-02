@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require('cors');
 const { createTodo, updateTodo } = require("./types");
 const { todo } = require("./db");
 const port = 3000;
 const app = express();
+app.use(cors({}))
 
 app.use(express.json())
 
@@ -27,7 +29,10 @@ app.post('/todo', async(req, res)=>{
 
 app.get('/todos', async(req, res)=>{
     const todos = await todo.find({})
-    console.log(todos)
+    // console.log(todos)
+    res.json({
+        todos: todos
+    })
     // res.json({
     //     todos
     // })

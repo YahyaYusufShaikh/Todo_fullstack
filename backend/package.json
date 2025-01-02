@@ -1,21 +1,16 @@
 {
-  "name": "todo-fullstack",
+  "name": "fullstack-todo",
   "version": "1.0.0",
-  "description": "simple to do app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yahya",
+  "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "todo-fullstack": "file:",
-    "zod": "^3.24.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
+    "mongoose": "^8.9.3"
   }
 }
