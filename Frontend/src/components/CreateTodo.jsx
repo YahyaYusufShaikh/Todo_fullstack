@@ -31,7 +31,7 @@ export function CreateTodo(){
                     description : description
                 }),
                 headers : {
-                    "contentType" : "application/json"
+                    "Content-Type" : "application/json" //checks the data is it json or not in the header as app.use({})
                 }
             })
                 .then(async (res)=>{
